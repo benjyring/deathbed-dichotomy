@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js dd">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Deathbed Dichotomy</title>
+		<meta name="description" content="Deathbed Dichotomy is an American blackened doom band from North Dakota. The band was founded in Bismarck in 2013, initially consisting of two members: Luke Ganje and Benjamin Jyring." />
+		<meta name="keywords" content="deathbed dichotomy, american, black metal" />
+		<meta name="author" content="Benjamin Jyring" />
+		<link rel="shortcut icon" href="img/icons/favicon.ico">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+   	<script type="text/javascript" src="js/jquery.interactive_bg.js"></script>
+		<link href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="../file/js/modernizr.js"></script>
+	</head>
+
+	<body>
+
+		<div class="container bg" data-ibg-bg="bg.jpg">
+<!--INDEX-->
+			<div class="header">
+				<h1><a id="social">Deathbed Dichotomy</a></h1>
+				<section>
+					<a href="https://www.facebook.com/deathbeddichotomy" target="_blank"><img src="img/icons/facebook.svg" height="50px" width="50px"></a>
+					<a href="https://deathbeddichotomy.bandcamp.com/" target="_blank"><img src="img/icons/bc.svg" height="50px" width="50px"></a>
+					<a href="https://instagram.com/" target="_blank"><img src="img/icons/ig.svg" height="50px" width="50px"></a>
+					<a href="vimeo.com" target="_blank"><img src="img/icons/vimeo.svg" height="50px" width="50px"></a>
+				</section>
+			</div>
+<!--CONTROLS-->
+			<a title="About Deathbed Dichotomy" class="prev" href="about.html"><img src="img/icons/prev.svg" height="50px" width="50px"></a>
+			<a title="Photos and Music Gallery" class="next" href="media.html"><img src="img/icons/next.svg" height="50px" width="50px"></a>
+		</div>
+			<footer>
+				<h5>Deathbed Dichotomy</h5>
+				<p>copyright @Ben Jyring 2014-<?php echo date("Y"); ?></p>
+			</footer>
+			<script>
+			document.querySelector("#social").addEventListener("click", function(){
+				document.querySelector("section").style.display = "block";
+			});
+			</script>
+			<script type="text/javascript">
+				$(".bg").interactive_bg();
+			</script>
+
+			<script>
+				lightbox.option({
+					'resizeDuration': 200,
+					'alwaysShowNavOnTouchDevices': true
+				})
+			</script>
+		</div>
+	</body>
+</html>

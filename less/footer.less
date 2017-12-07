@@ -1,0 +1,48 @@
+.push {
+	height: 45px;
+
+	@media @max-breakpoint {
+		height: 80px;
+	}
+}
+
+
+footer {
+	background-color: #777;
+	height: 45px;
+
+	@media @max-breakpoint {
+		height: 80px;
+	}
+
+	* {
+		color: white;
+	}
+
+	a {
+		transition: border .2s ease;
+
+		&:hover {
+			border-bottom: 0.5em solid;
+			color: white;
+			font-weight: bold;
+			text-decoration: none !important;
+		}
+	}
+
+	p {
+		padding: 15px 0 0;
+		font-weight: 100;
+		letter-spacing: 1px;
+
+		@media @max-breakpoint {
+			text-align: center;
+
+			small.pull-right {
+				display: block;
+				float: initial !important;
+				margin: 15px;
+			}
+		}
+	}
+}

@@ -1,0 +1,129 @@
+@import "bootstrap";
+@import "header";
+// Variables
+
+// Less than the Grid Float Breakpoint
+@max-breakpoint: ~"(max-width: @{grid-float-breakpoint-max})";
+// Greater than the Grid Float Breakpoint
+@min-breakpoint: ~"(min-width: @{grid-float-breakpoint})";
+
+// Only Extra-small
+@only-xs: ~"(max-width: @{screen-xs-max})";
+
+// Small and less
+@max-sm: ~"(max-width: @{screen-sm-max})";
+// Only Small
+@only-sm: ~"(min-width: @{screen-sm-min}) and (max-width: @{screen-sm-max})";
+// Small and greater
+@min-sm: ~"(min-width: @{screen-sm-min})";
+
+// Medium and less
+@max-md: ~"(max-width: @{screen-md-max})";
+// Only Medium
+@only-md: ~"(min-width: @{screen-md-min}) and (max-width: @{screen-md-max})";
+// Medium and greater
+@min-md: ~"(min-width: @{screen-md-min})";
+
+// Only Large
+@only-lg: ~"(min-width: @{screen-lg-min})";
+
+// General Styles
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+.bodywrap {
+	margin-bottom: -45px;
+	min-height: 100%;
+	padding-bottom: 30px;
+
+	@media @max-breakpoint {
+		margin-bottom: -70px;
+	}
+}
+
+// Miscellaneous Styles
+
+button.contact {
+	margin-bottom: 1.5em;
+}
+
+.circle-crop {
+	border: 8px solid;
+	border-radius: 50%;
+	display: inline-block;
+	overflow: hidden;
+
+	@media @only-xs {
+		display: block;
+		margin: 0 auto 35px;
+		width: 229px;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+.page-header {
+	@media @only-xs {
+		.text-center;
+	}
+}
+
+.same-height {
+	@media @min-sm {
+		height: 234px;
+	}
+}
+
+ul.social-links {
+	list-style: none;
+	margin: 0;
+	padding: 30px 15px;
+
+	i {
+		height: 40px;
+		width: 40px;
+		display: inline-block;
+
+		&.github {
+			background: url('/img/icons/github.png') no-repeat left top;
+			background-size: contain;
+		}
+		&.linkedin {
+			background: url('/img/icons/linkedin.png') no-repeat left top;
+			background-size: contain;
+		}
+	}
+}
+
+.vert-align-center {
+	@media @min-sm {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+// Font Styles
+* {
+	font-family: 'Raleway', sans-serif;
+}
+
+#about,
+#portfolio {
+	display: none;
+	margin-top: 60px;
+}
+
+#home {
+	margin-top: 60px;
+}
+
+@import "portfolio";
+
+@import "footer";
